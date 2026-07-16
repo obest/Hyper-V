@@ -1,0 +1,4 @@
+Get-VirtualDisk | Remove-VirtualDisk -Confirm:$false
+Get-StoragePool -IsPrimordial $false | Remove-StoragePool -Confirm:$false
+Disable-ClusterS2D -Confirm:$false
+Get-Cluster | Remove-Cluster -Force
