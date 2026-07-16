@@ -1,0 +1,6 @@
+New-LocalUser -AccountNeverExpires -PasswordNeverExpires -Name admuser
+Add-LocalGroupMember -Member admuser -group Administrators # Englisch OS Language
+Add-LocalGroupMember -Member admuser -group Administratoren # German OS Language
+Add-LocalGroupMember -Member admuser -Sid S-1-5-32-544 # Using Well Known SID (OS Language Independent)
+
+
